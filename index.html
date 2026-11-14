@@ -4,16 +4,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The Eight Regents Hotel 404. Um antigo hotel, oito andares e segredos que deveriam permanecer enterrados.">
+<meta name="description" content="The Eight Regents Hotel 404. Oito andares, oito Regents e uma história que deveria permanecer enterrada.">
 <title>The Eight Regents Hotel 404</title>
 
 <style>
 :root {
-  --black: #100e0f;
-  --red: #751e29;
+  --black: #100d0e;
+  --red: #8c202e;
   --gold: #b99a63;
-  --white: #e5dccd;
-  --muted: #a69b91;
+  --white: #e8dfd2;
+  --muted: #b0a49a;
 }
 
 * {
@@ -34,25 +34,33 @@ body {
 }
 
 header {
-  padding: 22px 8%;
+  min-height: 75px;
+  padding: 18px 7%;
   border-bottom: 1px solid #49332e;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
+  background: #100d0e;
 }
 
 .logo {
   color: var(--gold);
-  letter-spacing: 3px;
-  font-size: 13px;
+  letter-spacing: 4px;
+  font-size: 14px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 nav a {
   color: var(--muted);
   text-decoration: none;
-  margin-left: 18px;
-  font-size: 13px;
+  font-size: 12px;
+  letter-spacing: 1px;
 }
 
 nav a:hover {
@@ -60,15 +68,40 @@ nav a:hover {
 }
 
 .hero {
-  min-height: 580px;
+  min-height: 680px;
   padding: 100px 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background:
-    linear-gradient(90deg, #100e0f 10%, #100e0fdd 60%, #100e0f88),
-    radial-gradient(ellipse at 80% 50%, #641d27, #100e0f 70%);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #100d0e;
   border-bottom: 1px solid #49332e;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url("./26%20Sem%20T%C3%ADtulo_20261111182606.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    #100d0e 0%,
+    #100d0ecf 42%,
+    #100d0e77 100%
+  );
 }
 
 .eyebrow {
@@ -79,20 +112,21 @@ nav a:hover {
 }
 
 h1 {
-  font-size: clamp(42px, 8vw, 78px);
-  line-height: 1.05;
+  font-size: clamp(43px, 8vw, 82px);
+  line-height: 1.04;
   max-width: 850px;
   font-weight: normal;
 }
 
 h1 span {
-  color: var(--red);
+  color: #a52a3a;
 }
 
 .hero p {
-  color: var(--muted);
+  color: var(--white);
   max-width: 550px;
   margin-top: 28px;
+  font-size: 17px;
 }
 
 .button {
@@ -105,6 +139,7 @@ h1 span {
   width: fit-content;
   letter-spacing: 2px;
   font-size: 12px;
+  transition: 0.2s;
 }
 
 .button:hover {
@@ -174,10 +209,18 @@ section p {
 
 footer {
   text-align: center;
-  padding: 35px 15px;
-  color: #776b65;
+  padding: 45px 15px;
+  color: #94877d;
   font-size: 11px;
   letter-spacing: 2px;
+}
+
+footer strong {
+  display: block;
+  color: var(--red);
+  font-size: 17px;
+  margin-top: 12px;
+  letter-spacing: 5px;
 }
 
 @media (max-width: 600px) {
@@ -185,13 +228,22 @@ footer {
     flex-direction: column;
   }
 
-  nav a {
-    margin: 0 7px;
-    font-size: 11px;
+  nav {
+    justify-content: center;
+    gap: 14px;
   }
 
   .hero {
-    min-height: 500px;
+    min-height: 600px;
+    padding: 80px 8%;
+  }
+
+  .hero::after {
+    background: linear-gradient(
+      90deg,
+      #100d0ee8,
+      #100d0eaa
+    );
   }
 
   section {
@@ -205,6 +257,7 @@ footer {
 
 <header>
   <div class="logo">HOTEL 404</div>
+
   <nav>
     <a href="#about">O HOTEL</a>
     <a href="#floors">ANDARES</a>
@@ -216,16 +269,24 @@ footer {
 
 <div class="hero">
   <div class="eyebrow">ESTABLISHED 1867</div>
-  <h1>THE EIGHT<br>REGENTS<br><span>HOTEL 404</span></h1>
+
+  <h1>
+    THE EIGHT<br>
+    REGENTS<br>
+    <span>HOTEL 404</span>
+  </h1>
+
   <p>
-    Oito andares. Oito histórias. Um lugar onde a morte
-    não significa necessariamente o fim.
+    Oito andares. Oito histórias.
+    Um lugar onde a morte não significa necessariamente o fim.
   </p>
+
   <a class="button" href="#about">ENTRAR NO HOTEL</a>
 </div>
 
 <section id="about">
   <div class="section-label">01 / INTRODUÇÃO</div>
+
   <h2>Um lugar esquecido pelo tempo.</h2>
 
   <p>
@@ -236,10 +297,9 @@ footer {
 
   <p>
     Entretanto, após anos de funcionamento, o hotel
-    fechou suas portas em 1874. O isolamento, os
-    desaparecimentos e os acontecimentos inexplicáveis
-    transformaram o lugar em algo que poucos desejavam
-    conhecer.
+    fechou suas portas em 1874. Os desaparecimentos,
+    o isolamento e os acontecimentos inexplicáveis
+    transformaram o lugar em algo que poucos desejavam conhecer.
   </p>
 
   <p>
@@ -251,13 +311,14 @@ footer {
 
 <section id="floors">
   <div class="section-label">02 / ARQUITETURA</div>
+
   <h2>Oito andares. Oito Regents.</h2>
 
   <p>
-    Cada andar possui uma entidade superior responsável
-    por seu território. As criaturas que habitam esses
-    espaços carregam características relacionadas ao
-    Regent e às circunstâncias de suas próprias mortes.
+    Cada andar está associado a uma entidade superior,
+    conhecida como Regent. As criaturas que habitam
+    esses espaços carregam características relacionadas
+    aos seus andares e às circunstâncias de suas mortes.
   </p>
 
   <div class="floors">
@@ -273,37 +334,37 @@ footer {
 
   <div class="warning">
     O sexto andar permanece sem um Regent conhecido.
-    Nem todos os registros sobre seu antigo ocupante
-    são confiáveis.
+    Os registros sobre seu antigo ocupante são incertos.
   </div>
 </section>
 
 <section id="regents">
-  <div class="section-label">03 / OS HABITANTES</div>
+  <div class="section-label">03 / HABITANTES</div>
+
   <h2>Os Regents</h2>
 
   <p>
-    Eles foram humanos. Agora, são os responsáveis
-    pelos oito andares do hotel.
+    Eles foram humanos. Agora, são as entidades superiores
+    responsáveis pelos oito andares do hotel.
   </p>
 
   <p>
-    Cada um possui uma história, uma aparência e
-    uma relação particular com o lugar. Nem todos
-    compartilham os mesmos interesses, e nem todos
-    desejam a presença de novos moradores.
+    Cada um possui uma história, uma aparência e uma
+    relação particular com o lugar. Nem todos compartilham
+    os mesmos interesses, e nem todos desejam a presença
+    de novos moradores.
   </p>
 
   <div class="warning">
     <strong>ARQUIVOS EM CONSTRUÇÃO</strong><br>
-    Os registros individuais dos Regents e das
-    entidades inferiores serão disponibilizados
-    em breve.
+    Os registros individuais dos Regents e das entidades
+    inferiores serão disponibilizados em breve.
   </div>
 </section>
 
 <section>
   <div class="section-label">04 / AVISO</div>
+
   <h2>Antes de entrar...</h2>
 
   <p>
@@ -312,16 +373,17 @@ footer {
     e os moradores raramente fazem perguntas.
   </p>
 
-  <p>
-    Aproveite sua estadia.
-  </p>
+  <p>Aproveite sua estadia.</p>
 </section>
 
 </main>
 
 <footer>
-  THE EIGHT REGENTS HOTEL 404<br>
+  THE EIGHT REGENTS HOTEL 404
+  <br>
   UM PROJETO FICCIONAL INDEPENDENTE
+
+  <strong>CREATED BY NAIXXO!</strong>
 </footer>
 
 </body>
