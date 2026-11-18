@@ -4,1900 +4,472 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#100d0d">
+<meta name="description" content="The Eight Regents Hotel 404: an archive of its history, Regents, lower entities, and supernatural rules.">
 <title>The Eight Regents Hotel 404</title>
-
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:wght@400;600;700&display=swap');
-
-:root {
-  --bg:#100d0d;
-  --panel:#191313;
-  --panel2:#211717;
-  --red:#a52b32;
-  --bright:#d34a4f;
-  --gold:#b89a65;
-  --cream:#e8dfd1;
-  --muted:#a99b90;
-  --line:#49302e;
-}
-
-* {
-  box-sizing:border-box;
-  scroll-behavior:smooth;
-}
-
-body {
-  margin:0;
-  background:var(--bg);
-  color:var(--cream);
-  font-family:'Crimson Text',Georgia,serif;
-  font-size:19px;
-  line-height:1.65;
-}
-
-a {
-  color:var(--gold);
-  text-decoration:none;
-}
-
-a:hover {color:var(--bright);}
-
-header {
-  position:sticky;
-  top:0;
-  z-index:10;
-  background:rgba(16,13,13,.96);
-  border-bottom:1px solid var(--line);
-  backdrop-filter:blur(12px);
-}
-
-.topbar {
-  max-width:1250px;
-  margin:auto;
-  padding:12px 5%;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:15px;
-  flex-wrap:wrap;
-}
-
-.brand {
-  font-family:Cinzel,serif;
-  font-size:14px;
-  letter-spacing:2px;
-  color:var(--cream);
-}
-
-nav {
-  display:flex;
-  flex-wrap:wrap;
-  gap:15px;
-  font-size:14px;
-}
-
-nav a {color:var(--muted);}
-
-.social-top {
-  display:flex;
-  gap:9px;
-  flex-wrap:wrap;
-}
-
-.social-link {
-  border:1px solid var(--gold);
-  padding:5px 12px;
-  font-family:Cinzel,serif;
-  font-size:12px;
-  letter-spacing:1px;
-}
-
-.hero {
-  min-height:620px;
-  display:flex;
-  align-items:end;
-  background:
-  linear-gradient(to top,#100d0d 0%,rgba(16,13,13,.2) 65%,rgba(16,13,13,.25)),
-  url("./26%20Sem%20T%C3%ADtulo_20261111182606.png") center 35%/cover no-repeat;
-}
-
-.hero-content {
-  width:100%;
-  max-width:1100px;
-  margin:auto;
-  padding:90px 6% 65px;
-}
-
-.eyebrow,.section-number,.tag,.status {
-  font-family:Cinzel,serif;
-  text-transform:uppercase;
-  letter-spacing:3px;
-}
-
-.eyebrow {
-  color:var(--bright);
-  font-size:13px;
-}
-
-h1,h2,h3 {
-  font-family:Cinzel,Georgia,serif;
-  font-weight:500;
-  line-height:1.25;
-}
-
-h1 {
-  font-size:clamp(38px,7vw,78px);
-  margin:12px 0;
-}
-
-h2 {
-  font-size:clamp(27px,4vw,40px);
-  margin:8px 0 22px;
-}
-
-h3 {
-  color:var(--gold);
-  font-size:21px;
-  margin-top:0;
-}
-
-.hero p {
-  max-width:650px;
-  color:#e0d5c8;
-  font-size:21px;
-}
-
-.hero-buttons {
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:25px;
-}
-
-.button {
-  display:inline-block;
-  padding:10px 20px;
-  border:1px solid var(--red);
-  background:var(--red);
-  color:white;
-  font-family:Cinzel,serif;
-  font-size:13px;
-  letter-spacing:1px;
-}
-
-.button.secondary {
-  background:transparent;
-  border-color:var(--gold);
-  color:var(--gold);
-}
-
-main {
-  max-width:1100px;
-  margin:auto;
-  padding:20px 6% 80px;
-}
-
-section {
-  padding:65px 0;
-  border-bottom:1px solid var(--line);
-  scroll-margin-top:85px;
-}
-
-.section-number {
-  color:var(--red);
-  font-size:12px;
-}
-
-p {margin:12px 0;}
-
-.lead {
-  font-size:22px;
-  color:#d7c8b9;
-  max-width:850px;
-}
-
-.note {
-  border-left:3px solid var(--red);
-  background:var(--panel);
-  padding:17px 22px;
-  margin:25px 0;
-  color:#d6c7b8;
-}
-
-.gold-note {border-left-color:var(--gold);}
-
-.grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-  gap:15px;
-  margin-top:25px;
-}
-
-.card {
-  background:var(--panel);
-  border:1px solid var(--line);
-  padding:22px;
-}
-
-.card p {color:#c2b4a8;}
-
-.tag {
-  display:inline-block;
-  color:var(--bright);
-  font-size:11px;
-  letter-spacing:1px;
-  margin-bottom:8px;
-}
-
-.floor-list {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:12px;
-  margin-top:25px;
-}
-
-.floor {
-  background:linear-gradient(135deg,#211717,#151010);
-  border:1px solid var(--line);
-  padding:18px;
-}
-
-.floor strong {
-  display:block;
-  color:var(--gold);
-  font-family:Cinzel,serif;
-  font-size:17px;
-}
-
-.floor span {
-  color:var(--muted);
-  font-size:16px;
-}
-
-details {
-  background:var(--panel);
-  border:1px solid var(--line);
-  margin:12px 0;
-}
-
-summary {
-  cursor:pointer;
-  padding:17px 20px;
-  color:var(--gold);
-  font-family:Cinzel,serif;
-  font-size:17px;
-  list-style-position:inside;
-}
-
-details[open] summary {
-  border-bottom:1px solid var(--line);
-  color:var(--bright);
-}
-
-.detail-content {padding:18px 22px 22px;}
-
-.status {
-  color:var(--bright);
-  font-size:11px;
-  letter-spacing:1px;
-}
-
-.timeline {
-  border-left:1px solid var(--red);
-  margin:25px 0 0 8px;
-  padding-left:25px;
-}
-
-.event {
-  position:relative;
-  margin-bottom:27px;
-}
-
-.event::before {
-  content:"";
-  position:absolute;
-  left:-31px;
-  top:10px;
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  background:var(--red);
-}
-
-.event strong {
-  color:var(--gold);
-  font-family:Cinzel,serif;
-}
-
-/* CHARACTER GALLERY */
-
-.gallery-intro {max-width:800px;}
-
-.gallery {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
-  gap:18px;
-  margin-top:30px;
-}
-
-.character-card {
-  background:var(--panel);
-  border:1px solid var(--line);
-  overflow:hidden;
-  transition:.25s;
-}
-
-.character-card:hover {
-  border-color:var(--gold);
-  transform:translateY(-4px);
-}
-
-.character-image {
-  width:100%;
-  aspect-ratio:3/4;
-  background:linear-gradient(145deg,#291a1a,#120e0e);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:15px;
-  color:var(--muted);
-  font-family:Cinzel,serif;
-  font-size:12px;
-  letter-spacing:2px;
-}
-
-.character-image img {
-  width:100%;
-  height:100%;
-  object-fit:cover;
-}
-
-.character-info {padding:17px;}
-
-.character-info h3 {
-  margin:0 0 5px;
-}
-
-.character-info p {
-  font-size:16px;
-  color:var(--muted);
-  margin:0;
-}
-
-/* SOCIALS */
-
-.social-section {
-  background:linear-gradient(135deg,#241414,#151010);
-  border:1px solid var(--red);
-  padding:30px;
-  margin-top:30px;
-  text-align:center;
-}
-
-.social-section h3 {
-  font-size:25px;
-  margin-bottom:8px;
-}
-
-.social-buttons {
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  flex-wrap:wrap;
-  margin-top:20px;
-}
-
-.social-big {
-  min-width:220px;
-  padding:15px 20px;
-  border:1px solid var(--gold);
-  background:#100d0d;
-  display:block;
-  transition:.2s;
-}
-
-.social-big:hover {
-  background:#462024;
-  border-color:var(--bright);
-}
-
-.social-big strong {
-  display:block;
-  color:var(--gold);
-  font-family:Cinzel,serif;
-  font-size:17px;
-}
-
-.social-big span {
-  color:var(--cream);
-  font-size:16px;
-}
-
-footer {
-  text-align:center;
-  padding:45px 20px;
-  background:#0b0909;
-  color:var(--muted);
-  border-top:1px solid var(--line);
-}
-
-footer strong {
-  display:block;
-  color:var(--gold);
-  font-family:Cinzel,serif;
-  letter-spacing:3px;
-  font-size:14px;
-  margin-top:12px;
-}
-
-.footer-social {
-  margin:15px 0;
-  display:flex;
-  justify-content:center;
-  gap:18px;
-  flex-wrap:wrap;
-}
-
-.small {
-  font-size:15px;
-  color:var(--muted);
-}
-
-@media(max-width:650px) {
-  .topbar {justify-content:center;}
-  nav {justify-content:center;}
-  .hero {min-height:540px;}
-  .hero-content {padding-bottom:45px;}
-  main {padding-left:5%;padding-right:5%;}
-  section {padding:48px 0;}
-}
+:root{--bg:#100d0d;--panel:#191313;--panel2:#211717;--red:#a52b32;--bright:#d34a4f;--gold:#b89a65;--cream:#e8dfd1;--muted:#a99b90;--line:#49302e;--max:1160px}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--cream);font:19px/1.65 'Crimson Text',Georgia,serif}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--bright)}
+header{position:sticky;top:0;z-index:20;background:rgba(16,13,13,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.topbar{max-width:var(--max);margin:auto;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.brand,h1,h2,h3,.eyebrow,.section-number,.tag,.status,nav,.button,summary,footer strong{font-family:Cinzel,Georgia,serif}
+.brand{color:var(--cream);font-size:14px;letter-spacing:2px;white-space:nowrap}
+nav{display:flex;flex-wrap:wrap;gap:13px;font-size:12px}
+nav a{color:var(--muted)}
+.social-top{display:flex;gap:8px}
+.social-link{border:1px solid var(--gold);padding:4px 10px;font-size:11px;letter-spacing:1px}
+.hero{min-height:620px;display:flex;align-items:end;background:linear-gradient(to top,#100d0d 0%,rgba(16,13,13,.22) 68%,rgba(16,13,13,.25)),url("./26%20Sem%20T%C3%ADtulo_20261111182606.png") center 35%/cover no-repeat}
+.hero-content{width:100%;max-width:var(--max);margin:auto;padding:90px 6% 65px}
+.eyebrow,.section-number,.tag,.status{text-transform:uppercase;letter-spacing:3px}
+.eyebrow{color:var(--bright);font-size:13px}
+h1,h2,h3{font-weight:500;line-height:1.25}
+h1{font-size:clamp(38px,7vw,78px);margin:12px 0}
+h2{font-size:clamp(27px,4vw,40px);margin:8px 0 22px}
+h3{color:var(--gold);font-size:21px;margin:0 0 10px}
+.hero p{max-width:650px;color:#e0d5c8;font-size:21px}
+.hero-buttons,.social-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.button{display:inline-block;padding:10px 20px;border:1px solid var(--red);background:var(--red);color:white;font-size:12px;letter-spacing:1px}
+.button.secondary{background:transparent;border-color:var(--gold);color:var(--gold)}
+main{max-width:var(--max);margin:auto;padding:20px 6% 80px}
+section{padding:62px 0;border-bottom:1px solid var(--line);scroll-margin-top:85px}
+.section-number{color:var(--red);font-size:12px}
+p{margin:12px 0}
+.lead{font-size:22px;color:#d7c8b9;max-width:850px}
+.note{border-left:3px solid var(--red);background:var(--panel);padding:17px 22px;margin:25px 0;color:#d6c7b8}
+.gold-note{border-left-color:var(--gold)}
+.grid,.floor-list,.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:25px}
+.card,.floor,.character-card{background:var(--panel);border:1px solid var(--line);padding:21px}
+.card p{color:#c2b4a8}
+.tag{display:inline-block;color:var(--bright);font-size:10px;letter-spacing:1px;margin-bottom:8px}
+.floor{background:linear-gradient(135deg,#211717,#151010)}
+.floor strong{display:block;color:var(--gold);font-family:Cinzel,serif;font-size:16px}
+.floor span{color:var(--muted);font-size:16px}
+details{background:var(--panel);border:1px solid var(--line);margin:12px 0}
+summary{cursor:pointer;padding:16px 20px;color:var(--gold);font-size:16px;list-style-position:inside}
+details[open] summary{border-bottom:1px solid var(--line);color:var(--bright)}
+.detail-content{padding:18px 22px 22px}
+.detail-content h3{margin-top:24px}
+.status{color:var(--bright);font-size:10px;letter-spacing:1px}
+.timeline{border-left:1px solid var(--red);margin:25px 0 0 8px;padding-left:25px}
+.event{position:relative;margin-bottom:25px}
+.event:before{content:"";position:absolute;left:-31px;top:10px;width:10px;height:10px;border-radius:50%;background:var(--red)}
+.event strong{color:var(--gold);font-family:Cinzel,serif}
+ul{padding-left:24px}li{margin:6px 0}
+.gallery-intro{max-width:800px}
+.character-card{padding:0;overflow:hidden;transition:.2s}
+.character-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.character-image{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;color:var(--muted);background:linear-gradient(145deg,#291a1a,#120e0e);font:11px Cinzel,serif;letter-spacing:2px}
+.character-image img{width:100%;height:100%;object-fit:cover}
+.character-info{padding:16px}
+.character-info h3{margin:0 0 5px}
+.character-info p{color:var(--muted);font-size:16px;margin:0}
+.social-section{background:linear-gradient(135deg,#241414,#151010);border:1px solid var(--red);padding:30px;margin-top:30px;text-align:center}
+.social-section h3{font-size:25px}
+.social-buttons{justify-content:center}
+.social-big{min-width:220px;padding:14px 20px;border:1px solid var(--gold);background:#100d0d;display:block}
+.social-big strong{display:block;color:var(--gold);font-family:Cinzel,serif;font-size:16px}
+.social-big span{color:var(--cream);font-size:16px}
+.small{color:var(--muted);font-size:15px}
+.search-wrap{margin:18px 0 24px}
+#archiveSearch{width:100%;padding:12px 14px;color:var(--cream);background:#0b0909;border:1px solid var(--line);font:17px 'Crimson Text',serif}
+footer{text-align:center;padding:42px 20px;background:#0b0909;color:var(--muted);border-top:1px solid var(--line)}
+footer strong{display:block;color:var(--gold);letter-spacing:3px;font-size:14px;margin-top:12px}
+.footer-social{margin:15px 0;display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
+@media(max-width:700px){.topbar{justify-content:center}nav{justify-content:center}.hero{min-height:540px}.hero-content{padding-bottom:45px}main{padding-left:5%;padding-right:5%}section{padding:46px 0}body{font-size:18px}}
 </style>
 </head>
-
 <body>
+<header><div class="topbar">
+<a class="brand" href="#home">HOTEL 404</a>
+<nav aria-label="Main navigation">
+<a href="#about">About</a><a href="#hotel">Hotel</a><a href="#world">World</a><a href="#floors">Floors</a><a href="#regents">Regents</a><a href="#residents">Residents</a><a href="#gallery">Gallery</a><a href="#relationships">Connections</a><a href="#comics">Comics</a><a href="#timeline">Timeline</a>
+</nav>
+<div class="social-top"><a class="social-link" href="https://x.com/Yukijineru" target="_blank" rel="noopener">X</a><a class="social-link" href="https://naix0x.tumblr.com/" target="_blank" rel="noopener">TUMBLR</a></div>
+</div></header>
 
-<header>
-  <div class="topbar">
-    <a class="brand" href="#home">HOTEL 404</a>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#hotel">Hotel</a>
-      <a href="#world">World</a>
-      <a href="#floors">Floors</a>
-      <a href="#regents">Regents</a>
-      <a href="#residents">Residents</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#relationships">Connections</a>
-      <a href="#comics">Comics</a>
-    </nav>
-
-    <div class="social-top">
-      <a class="social-link" href="https://x.com/Yukijineru" target="_blank" rel="noopener">X / TWITTER</a>
-      <a class="social-link" href="https://naix0x.tumblr.com/" target="_blank" rel="noopener">TUMBLR</a>
-    </div>
-  </div>
-</header>
-
-<div class="hero" id="home">
-  <div class="hero-content">
-    <div class="eyebrow">An invitation you should reconsider</div>
-    <h1>THE EIGHT<br>REGENTS HOTEL 404</h1>
-    <p>
-      Eight floors. Eight histories. A building filled with things
-      that should have remained dead.
-    </p>
-    <div class="hero-buttons">
-      <a class="button" href="#about">ENTER THE HOTEL</a>
-      <a class="button secondary" href="#regents">MEET THE REGENTS</a>
-    </div>
-  </div>
-</div>
+<div class="hero" id="home"><div class="hero-content">
+<div class="eyebrow">An invitation you should reconsider</div>
+<h1>THE EIGHT<br>REGENTS HOTEL 404</h1>
+<p>Eight floors. Eight histories. A building filled with things that should have remained dead.</p>
+<div class="hero-buttons"><a class="button" href="#about">ENTER THE HOTEL</a><a class="button secondary" href="#regents">MEET THE REGENTS</a></div>
+</div></div>
 
 <main>
-
-<!-- 01 ABOUT -->
-
 <section id="about">
-  <div class="section-number">01 / INTRODUCTION</div>
-  <h2>Welcome to Hotel 404</h2>
-
-  <p class="lead">
-    An old hotel in Brazil, a suspiciously cheap place to live,
-    and inhabitants that ordinary humans cannot even see.
-  </p>
-
-  <p>
-    The Eight Regents Hotel 404 is a supernatural setting built around
-    death, identity, emotional energy, hierarchy, and the strange ways
-    a person's past can shape what they become.
-  </p>
-
-  <p>
-    The building houses entities that originated from dead humans.
-    Some control entire floors. Others are trapped there, living
-    in the shadow of the beings who came before them.
-  </p>
-
-  <div class="note">
-    <strong>IMPORTANT:</strong> The protagonist represents the reader
-    and intentionally has an open identity.
-  </div>
+<div class="section-number">01 / INTRODUCTION</div><h2>Welcome to Hotel 404</h2>
+<p class="lead">An old hotel in Brazil, suspiciously cheap rooms, and inhabitants ordinary humans cannot even see.</p>
+<p>The Eight Regents Hotel 404 is a supernatural setting built around death, identity, emotional energy, hierarchy, and the strange ways a person's past can shape what they become.</p>
+<p>The building houses entities that originated from dead humans. Some control entire floors. Others remain trapped there, living under the influence of the beings who came before them.</p>
+<div class="note"><strong>IMPORTANT:</strong> The protagonist represents the reader and intentionally has an open identity.</div>
 </section>
-
-<!-- 02 HOTEL -->
 
 <section id="hotel">
-  <div class="section-number">02 / THE BUILDING</div>
-  <h2>The Hotel</h2>
-
-  <p>
-    Founded in 1867, the hotel was originally a luxury establishment
-    for nobles and wealthy visitors. It operated for approximately
-    seven years before closing in 1874, following crimes and disappearances.
-  </p>
-
-  <p>
-    The building was eventually abandoned. Decades later, its doors
-    reopened. Today, it attracts residents with incredibly low rent.
-    The owner knows exactly what kind of place this is.
-  </p>
-
-  <div class="grid">
-    <div class="card">
-      <span class="tag">The building</span>
-      <h3>Eight floors</h3>
-      <p>Each floor is associated with a Regent and has its own atmosphere
-      and influence on the entities living there.</p>
-    </div>
-
-    <div class="card">
-      <span class="tag">The residents</span>
-      <h3>Cheap rent</h3>
-      <p>Humans are drawn in by prices that seem too good to be true.
-      Their emotional energy becomes a resource.</p>
-    </div>
-
-    <div class="card">
-      <span class="tag">The owner</span>
-      <h3>Someone knows</h3>
-      <p>The owner can see entities and knowingly brings new residents
-      into the hotel. Their identity and motives remain unknown.</p>
-    </div>
-  </div>
-
-  <h3 style="margin-top:35px;">The hotel's history</h3>
-
-  <div class="timeline">
-    <div class="event">
-      <strong>1867</strong>
-      <p>The hotel is founded in Brazil. Its builder remains unknown.</p>
-    </div>
-
-    <div class="event">
-      <strong>1867–1874</strong>
-      <p>The hotel operates. During this period, several future Regents
-      die within its walls.</p>
-    </div>
-
-    <div class="event">
-      <strong>1874</strong>
-      <p>The hotel closes after crimes and disappearances.</p>
-    </div>
-
-    <div class="event">
-      <strong>After the closure</strong>
-      <p>Akuya dies in his office on the eighth floor as authorities
-      approach. The hotel remains abandoned.</p>
-    </div>
-
-    <div class="event">
-      <strong>Decades later</strong>
-      <p>The future Regents awaken as entities, approximately eighty
-      years after their individual deaths.</p>
-    </div>
-
-    <div class="event">
-      <strong>Present day</strong>
-      <p>The hotel reopens and begins receiving new residents.</p>
-    </div>
-  </div>
+<div class="section-number">02 / THE BUILDING</div><h2>The Hotel</h2>
+<p>Founded in Brazil in 1867, the hotel was originally a luxury establishment for nobles and wealthy visitors. It operated until 1874, when complaints, investigations, crimes, and disappearances led to its closure.</p>
+<p>The building was eventually abandoned. Much later, it reopened under a new owner who attracts residents with extremely cheap rooms. The owner knows what kind of place this is and uses its residents as sources of energy.</p>
+<div class="grid">
+<div class="card"><span class="tag">THE BUILDING</span><h3>Eight floors</h3><p>Each floor is associated with a Regent and carries its influence.</p></div>
+<div class="card"><span class="tag">THE RESIDENTS</span><h3>Cheap rent</h3><p>Humans are drawn in by prices that seem too good to be true. Their vital and emotional energy becomes a resource.</p></div>
+<div class="card"><span class="tag">THE OWNER</span><h3>Someone knows</h3><p>The owner can see entities and knowingly brings new residents into the hotel. Their identity and motives remain unknown.</p></div>
+</div>
+<h3 style="margin-top:35px">The hotel's history</h3>
+<div class="timeline">
+<div class="event"><strong>1867</strong><p>The hotel is founded in Brazil. Its builder remains unknown.</p></div>
+<div class="event"><strong>1867–1874</strong><p>The hotel operates. During this period, several future Regents die within its walls.</p></div>
+<div class="event"><strong>1874</strong><p>The hotel closes after complaints and investigations.</p></div>
+<div class="event"><strong>End of the hotel's operation</strong><p>Akuya dies in the hotel office before facing justice. The building is abandoned.</p></div>
+<div class="event"><strong>Approximately 80 years after each death</strong><p>The future Regents awaken as entities. Their awakenings do not necessarily happen at the same time.</p></div>
+<div class="event"><strong>Present day</strong><p>The hotel reopens and begins receiving new residents.</p></div>
+</div>
 </section>
-
-<!-- 03 WORLD -->
 
 <section id="world">
-  <div class="section-number">03 / THE WORLD</div>
-  <h2>How this world works</h2>
-
-  <h3>Superior entities / Regents</h3>
-
-  <p>
-    Regents were the first entities to emerge on their respective floors.
-    All of them were human during their lives, and their deaths are
-    connected to Akuya Scarlet Luther.
-  </p>
-
-  <p>
-    They are bound to the floors where they died. They possess more
-    accumulated energy than lower entities and can feed on both human
-    emotional energy and other entities.
-  </p>
-
-  <h3>Lower entities</h3>
-
-  <p>
-    Lower entities are souls of humans who died inside the hotel.
-    Many were victims of the Regents, but not every person who dies
-    returns as an entity.
-  </p>
-
-  <p>
-    Strong emotions at the moment of death may influence whether a soul
-    remains: anger, fear, resentment, betrayal, despair, or a powerful
-    feeling of injustice.
-  </p>
-
-  <div class="note gold-note">
-    <strong>THE LOWER ENTITIES WILL BE INTRODUCED GRADUALLY.</strong>
-    This is an ongoing world. New residents and their stories will be
-    added as they are revealed. The current list is not the complete
-    population of the hotel.
-  </div>
-
-  <h3>Energy and survival</h3>
-
-  <p>
-    Entities feed on human vital and emotional energy. Their feeding
-    gradually affects the victim's emotional state, potentially causing
-    exhaustion, apathy, depression, and severe emotional deterioration.
-  </p>
-
-  <p>
-    Most entities cannot directly kill humans through physical force.
-    However, this is not an absolute rule: certain entities possess
-    the ability to physically kill humans. Which entities have this
-    exception has not yet been established.
-  </p>
-
-  <p>
-    Even without directly killing a person, an entity's feeding can
-    become lethal. In certain cases, an entity may influence or guide
-    an emotionally weakened victim toward a fatal outcome.
-  </p>
-
-  <p>
-    Regents can also consume lower entities. This is part of the
-    hierarchy and food chain that exists inside the hotel.
-  </p>
-
-  <h3>Names and souls</h3>
-
-  <p>
-    An entity's true name can be used to interfere with its soul.
-    Depending on the circumstances and intent, this may lead to
-    liberation or destruction. For this reason, true names are kept secret.
-  </p>
-
-  <h3>Manifestation and appearance</h3>
-
-  <p>An entity's appearance can be influenced by three main things:</p>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Death</h3>
-      <p>The circumstances of death may leave physical or symbolic marks.</p>
-    </div>
-
-    <div class="card">
-      <h3>Subconscious</h3>
-      <p>Memories, fears, desires, and accumulated thoughts can shape
-      an entity's form.</p>
-    </div>
-
-    <div class="card">
-      <h3>Personal influence</h3>
-      <p>Interests, personality, and the floor itself can influence
-      the final appearance.</p>
-    </div>
-  </div>
-
-  <h3 style="margin-top:35px;">Territories and movement</h3>
-
-  <p>
-    Lower entities generally remain on the floors where they belong.
-    This is not an absolute physical restriction, but a matter of
-    survival: entering another floor means stepping into territory
-    controlled by a different Regent and its inhabitants.
-  </p>
-
-  <p>
-    A lower entity can travel to another floor when accompanied by
-    its own superior entity. The Regent's presence offers protection
-    and makes it possible for its followers to move through unfamiliar
-    territory.
-  </p>
-
-  <p>
-    For example, Kittyn and CerRui can leave the fourth floor when
-    accompanying Squigscar. The same principle applies to the other
-    Regents and the lower entities who follow them.
-  </p>
-
-  <h3>Humans and the hotel</h3>
-
-  <p>
-    Ordinary humans cannot see entities. The protagonist was also
-    unable to see them when first arriving at the hotel. This changed
-    after the events involving Squigscar.
-  </p>
-
-  <p>
-    The hotel building itself does not lock people inside, change its
-    architecture, or act as a living creature. However, its inhabitants
-    can physically restrain humans and interfere with their attempts
-    to leave.
-  </p>
-
-  <div class="note gold-note">
-    <strong>THE BUILDING IS NOT THE PRISON.</strong>
-    The inhabitants are the ones who can turn a stay into captivity.
-  </div>
-
-  <h3>General rules</h3>
-
-  <ul>
-    <li>The hotel has exactly eight floors. A basement has not been decided.</li>
-    <li>The building is not sentient and does not change its architecture.</li>
-    <li>Ordinary humans cannot see entities.</li>
-    <li>The protagonist initially could not see entities, but can now do so.</li>
-    <li>The owner can see entities.</li>
-    <li>Regents are bound to the hotel.</li>
-    <li>Lower entities are generally tied to their respective floors.</li>
-    <li>Lower entities can travel with their own superior entity.</li>
-    <li>Most entities cannot directly kill humans physically.</li>
-    <li>Some entities may possess an exception to that rule.</li>
-    <li>Entities can physically restrain humans and interfere with their departure.</li>
-    <li>Entities feed on human energy, and Regents can consume lower entities.</li>
-    <li>Entities cannot die a second time through ordinary means.</li>
-    <li>True names can interfere with an entity's soul.</li>
-  </ul>
+<div class="section-number">03 / THE WORLD</div><h2>How this world works</h2>
+<h3>Superior entities / Regents</h3>
+<p>The Regents were human during their lives. Their deaths are connected to Akuya Scarlet Luther, and each became bound to a floor of the hotel. They possess more accumulated energy than lower entities and can feed on humans and other entities.</p>
+<p>Regents cannot die a second time through ordinary means. Their true names are dangerous secrets because knowing a true name can allow someone to interfere directly with that entity's soul, potentially freeing or destroying it.</p>
+<h3>Lower entities</h3>
+<p>Lower entities are mostly souls of humans who died inside the hotel, often victims of the Regents. Not every victim awakens. Powerful emotions at the moment of death, such as rage, fear, resentment, betrayal, despair, or a sense of injustice, may cause a person to remain as an entity.</p>
+<p>Lower entities are conscious, but their abilities and limitations vary. Some can speak, others cannot. They are generally tied to the floor where they died and are often influenced by its Regent, but they do not automatically obey that Regent.</p>
+<div class="note gold-note"><strong>THE LOWER ENTITIES WILL BE INTRODUCED GRADUALLY.</strong><p>This is an ongoing world. New residents and their stories will be added as they are revealed. The current list is not the complete population of the hotel.</p></div>
+<h3>Energy and survival</h3>
+<p>Entities feed on human vital and emotional energy. Feeding can gradually cause exhaustion, apathy, emotional wear, depression, reduced motivation, and psychological deterioration. It does not necessarily require physical contact.</p>
+<p>Some entities deliberately manipulate a person's emotional suffering and may guide a weakened victim toward a fatal outcome. This is not true of every entity. Regents can also consume lower entities, forming part of the hotel's supernatural food chain.</p>
+<h3>Physical interaction</h3>
+<p>Entities can touch, hold, restrain, and interfere with humans and objects. Most cannot directly kill humans through physical force, although exceptions exist and have not yet been identified. Entities may prevent residents from leaving, even though the building itself is not an architectural prison.</p>
+<h3>Appearance and manifestation</h3>
+<p>An entity's appearance can be influenced by the circumstances of death, the human subconscious, memories, fears, desires, trauma, personality, and the floor itself. The floor influences lower entities, but they are not copies of their Regent.</p>
+<div class="grid">
+<div class="card"><h3>Death</h3><p>The circumstances of death may leave physical or symbolic marks.</p></div>
+<div class="card"><h3>Subconscious</h3><p>Memories, fears, desires, and accumulated thoughts can shape an entity's form.</p></div>
+<div class="card"><h3>Personal influence</h3><p>Interests, personality, and the floor itself can influence the final appearance.</p></div>
+</div>
+<h3>Territories and movement</h3>
+<p>Lower entities are generally tied to the floors where they belong. They can travel to another floor when accompanied by their own superior entity. The Regent's presence offers protection in unfamiliar territory. For example, Kittyn and CerRui can leave the fourth floor when accompanying Squigscar.</p>
+<h3>Humans and the hotel</h3>
+<p>Ordinary humans cannot see entities. The protagonist initially could not see them either, but this changed after the events involving Squigscar. The current owner is another known exception.</p>
+<p>The hotel has a fixed architecture, exactly eight floors, and no consciousness of its own. Humans can enter and leave unless an entity physically intervenes. Regents are bound to the building, while lower entities are tied to their respective floors.</p>
+<div class="note gold-note"><strong>THE BUILDING IS NOT THE PRISON.</strong> Its inhabitants are the ones who can turn a stay into captivity.</div>
+<h3>General rules</h3>
+<ul>
+<li>The hotel has exactly eight floors. A basement has not been established.</li>
+<li>The building is not sentient and does not change its architecture.</li>
+<li>Ordinary humans cannot see entities. The protagonist and owner are exceptions.</li>
+<li>Regents are bound to the hotel; lower entities are tied to their floors.</li>
+<li>Lower entities may travel with their own superior entity.</li>
+<li>Most entities cannot directly kill humans physically, but exceptions exist.</li>
+<li>Entities can physically restrain humans and interfere with their departure.</li>
+<li>Entities feed on human energy; Regents can also consume lower entities.</li>
+<li>True names can interfere with an entity's soul.</li>
+</ul>
 </section>
-
-<!-- 04 FLOORS -->
 
 <section id="floors">
-  <div class="section-number">04 / THE FLOORS</div>
-  <h2>Eight floors. Eight influences.</h2>
-
-  <p>
-    Each floor carries the influence of its Regent. Lower entities may
-    develop traits related to that floor, but they are not identical copies
-    of its superior.
-  </p>
-
-  <div class="floor-list">
-    <div class="floor">
-      <strong>01 / Wincorter</strong>
-      <span>Staff, servants, porters, silence.</span>
-    </div>
-
-    <div class="floor">
-      <strong>02 / Knowless</strong>
-      <span>Science, anatomy, research.</span>
-    </div>
-
-    <div class="floor">
-      <strong>03 / Goldpride</strong>
-      <span>Luxury, aristocracy, vanity, hierarchy.</span>
-    </div>
-
-    <div class="floor">
-      <strong>04 / Squigscar</strong>
-      <span>Animals, distorted forms, childhood.</span>
-    </div>
-
-    <div class="floor">
-      <strong>05 / Meathew</strong>
-      <span>Kitchen, cooking, meat, food preparation.</span>
-    </div>
-
-    <div class="floor">
-      <strong>06 / Empty</strong>
-      <span>Formerly Geraldo's floor. No active Regent.</span>
-    </div>
-
-    <div class="floor">
-      <strong>07 / Dolita</strong>
-      <span>Dolls, fabrics, stitches, porcelain, toys.</span>
-    </div>
-
-    <div class="floor">
-      <strong>08 / Kordiller</strong>
-      <span>Control, oppression, isolation.</span>
-    </div>
-  </div>
+<div class="section-number">04 / THE FLOORS</div><h2>Eight floors. Eight influences.</h2>
+<p>Each floor carries the influence of its Regent. Lower entities may develop traits related to that floor, but they are not identical copies of their superior.</p>
+<div class="floor-list">
+<div class="floor"><strong>01 / Wincorter</strong><span>Staff, servants, porters, absolute silence.</span></div>
+<div class="floor"><strong>02 / Knowless</strong><span>Science, anatomy, research, instruments.</span></div>
+<div class="floor"><strong>03 / Goldpride</strong><span>Luxury, aristocracy, vanity, hierarchy, peacock imagery.</span></div>
+<div class="floor"><strong>04 / Squigscar</strong><span>Animals, distorted forms, childhood.</span></div>
+<div class="floor"><strong>05 / Meathew</strong><span>Kitchen, cooking, meat, food preparation.</span></div>
+<div class="floor"><strong>06 / Empty</strong><span>Formerly Geraldo's floor. No active Regent.</span></div>
+<div class="floor"><strong>07 / Dolita</strong><span>Dolls, fabrics, stitches, porcelain, plush toys.</span></div>
+<div class="floor"><strong>08 / Kordiller</strong><span>Control, oppression, isolation.</span></div>
+</div>
 </section>
-
-<!-- 05 REGENTS -->
 
 <section id="regents">
-  <div class="section-number">05 / THE REGENTS</div>
-  <h2>The Superior Entities</h2>
-
-  <p class="lead">
-    Seven active Regents are currently known. The sixth floor is vacant.
-  </p>
-
-  <details>
-    <summary>01. Wincorter</summary>
-    <div class="detail-content">
-      <p><span class="status">ACTIVE REGENT / FLOOR 1</span></p>
-
-      <p>
-        Wincorter was a young, handsome, mute man who worked at the hotel.
-        He carried luggage, helped guests, and assisted with the elevator.
-        He communicated through gestures and often smiled politely because
-        people did not understand him.
-      </p>
-
-      <p>
-        He disliked his own face because it resembled his father's.
-        He also disliked his smile, which he felt was false. Reserved
-        and uncomfortable with loud sounds, he rarely complained.
-      </p>
-
-      <p>
-        Now he demands absolute silence on the first floor. His face
-        has been replaced by a dark, melting mass. Four tentacle-like
-        appendages end in small snake heads. Each head can speak part
-        of a sentence, allowing them to communicate together.
-      </p>
-
-      <p>
-        The lower entities of this floor often resemble hotel staff:
-        servants, butlers, porters, bellhops, and employees.
-      </p>
-
-      <p><strong>Known as:</strong> Wincorter.</p>
-      <p><strong>True name:</strong> Unknown.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>02. Knowless</summary>
-    <div class="detail-content">
-      <p><span class="status">ACTIVE REGENT / FLOOR 2</span></p>
-
-      <p>
-        A former scientist who was promising for his time. Calm and
-        curious, he is fascinated by human anatomy and struggles to
-        restrain his desire to investigate living bodies.
-      </p>
-
-      <p>
-        His current form has the upper part of his head missing.
-        A dark tentacle-like structure emerges from it. One arm is
-        replaced by a dark appendage capable of forming tools and
-        instruments.
-      </p>
-
-      <p>
-        He can be clumsy, sometimes knocking objects over because
-        humans cannot see entities. He also struggles with modern
-        technology and tends to rely on outdated theories.
-      </p>
-
-      <p>
-        His lower entities often have scientific, anatomical, or
-        assistant-related traits. Some help him with his studies
-        or try to calm him down.
-      </p>
-
-      <p><strong>Known as:</strong> Knowless.</p>
-      <p><strong>True name:</strong> Unknown.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>03. Goldpride</summary>
-    <div class="detail-content">
-      <p><span class="status">ACTIVE REGENT / FLOOR 3</span></p>
-
-      <p>
-        Goldpride was once Duoei, a wealthy boy who grew up surrounded
-        by privilege and strict expectations. His mother was controlling,
-        miserly, and obsessed with social class.
-      </p>
-
-      <p>
-        He is vain, arrogant, controlling, and cruel. He is obsessed
-        with appearance and social position. He cannot stand being
-        outshone and may disfigure those he considers more beautiful.
-      </p>
-
-      <p>
-        His floor reflects aristocracy, luxury, hierarchy, and vanity.
-        Lower entities are expected to look immaculate and remain
-        socially inferior to him.
-      </p>
-
-      <p>
-        Duoei and Damien were childhood friends. On Damien's birthday,
-        Duoei ran away with an elegant peacock-shaped toy to give him
-        a present. Later, Akuya pressured Damien into killing his friend.
-      </p>
-
-      <p>
-        Duoei was buried with the toy. After awakening, he became
-        increasingly cruel. His current design retains dark aristocratic
-        aesthetics, peacock-inspired visual elements, and details
-        connected to his death.
-      </p>
-
-      <p>
-        He still calls Squigscar "unicorn", a childhood nickname.
-        Squigscar usually ignores him, which only makes him more irritated.
-      </p>
-
-      <p>
-        Goldpride is accompanied by four masked female lower entities
-        who serve as his personal attendants. They remain close to him
-        as he moves through the hotel.
-      </p>
-
-      <p>
-        GoldRat walks on his right side carrying a candle. Another
-        attendant wears a bird mask and walks on his left, also carrying
-        a candle. A central attendant carries a fan and uses it to cool
-        Goldpride. The fourth attendant's specific role remains undefined.
-      </p>
-
-      <p><strong>Known as:</strong> Goldpride.</p>
-      <p><strong>True name:</strong> Duoei (surname unknown).</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>04. Squigscar</summary>
-    <div class="detail-content">
-
-      <p><span class="status">ACTIVE REGENT / FLOOR 4 / ROOM 404</span></p>
-
-      <p>
-        Squigscar is an unpredictable, possessive, and peculiar entity.
-        He has an unusual fascination with animals, small objects,
-        and things that attract his curiosity. He can eat objects
-        and display behaviors that are difficult for humans to understand.
-      </p>
-
-      <p>
-        His form resembles a distorted horse or unicorn. He has one horn,
-        a long neck, pointed teeth, unusual limbs, and a rope around
-        his neck. He can stretch his neck and limbs, detach his head,
-        and transform into a considerably more terrifying form.
-      </p>
-
-      <p>
-        Although some depictions of him are visually appealing,
-        stylized, or even cute, this does not represent his actual
-        personality. Squigscar is not an innocent or harmless creature.
-        He can be intrusive, possessive, disturbing, and deliberately
-        inappropriate in certain aspects of his behavior.
-      </p>
-
-      <h3 style="margin-top:25px;">His life as Damien</h3>
-
-      <p>
-        In life, Damien was Akuya's younger brother. Their parents
-        favored Damien, while Akuya was bullied and repressed.
-        Akuya encouraged Damien's unusual behavior and became
-        the person Damien most wanted approval from.
-      </p>
-
-      <p>
-        As they grew older, Akuya's influence became increasingly
-        dangerous. Damien became involved in the hotel's crimes,
-        including the death of Duoei. Eventually he tried to leave
-        the hotel and escape his brother's control. Akuya stopped him
-        and killed him.
-      </p>
-
-      <p>
-        Damien never established a romantic relationship during
-        his lifetime. His life was heavily influenced and controlled
-        by Akuya, leaving him with little opportunity to experience
-        relationships outside that environment.
-      </p>
-
-      <p>
-        After awakening, Damien gradually became Squigscar.
-        His behavior, interests, and understanding of other beings
-        changed considerably. He no longer follows ordinary human
-        moral standards.
-      </p>
-
-      <h3 style="margin-top:25px;">The protagonist</h3>
-
-      <p>
-        Squigscar is fascinated by the protagonist's heterochromia:
-        one green eye and one black eye. He wants the protagonist
-        to become the Regent of the sixth floor, but the protagonist
-        refuses.
-      </p>
-
-      <p>
-        Squigscar considers the protagonist his legitimate husband.
-        However, this marriage exists exclusively in Squigscar's
-        interpretation. There is no actual marriage or mutually
-        established relationship.
-      </p>
-
-      <p>
-        The situation began when the protagonist, after arriving
-        at the hotel, accidentally asked the owner of the fourth
-        floor for marriage. Squigscar accepted the request.
-        The circumstances surrounding the request involved
-        activities that are not essential to the current account.
-      </p>
-
-      <p>
-        Squigscar subsequently began haunting the protagonist
-        more intensely. At first, the protagonist could not see
-        entities and was unaware of the full extent of his presence.
-      </p>
-
-      <p>
-        Eventually, the protagonist began seeing the supernatural
-        inhabitants of the hotel. Squigscar discovered that he
-        could finally be seen by his supposed husband.
-      </p>
-
-      <p>
-        This discovery frightened the protagonist but delighted
-        Squigscar, who became even more attentive and possessive.
-      </p>
-
-      <h3 style="margin-top:25px;">Unseen contact</h3>
-
-      <p>
-        Before the protagonist developed the ability to see entities,
-        Squigscar could approach and make spiritual contact without
-        being visually perceived.
-      </p>
-
-      <p>
-        The strange sensations the protagonist occasionally
-        experienced were caused by Squigscar's spiritual licking
-        and unwanted contact.
-      </p>
-
-      <p>
-        Once the protagonist gained spiritual sight, they could
-        finally identify the source of these sensations and observe
-        exactly what Squigscar was doing. The protagonist now
-        actively rejects this behavior because it causes discomfort.
-      </p>
-
-      <p>
-        It has not been established whether Squigscar's actions
-        during this invisible period were limited to the contact
-        already known. The possibility of other boundary violations
-        remains an unresolved part of the story.
-      </p>
-
-      <h3 style="margin-top:25px;">Personality and possessiveness</h3>
-
-      <p>
-        Squigscar is not genuinely shy, innocent, or particularly
-        affectionate in the conventional human sense. He can be
-        intrusive, possessive, and explicitly inappropriate in
-        certain aspects of his behavior.
-      </p>
-
-      <p>
-        He understands certain human boundaries but does not
-        necessarily consider human morality a restriction
-        that he must follow.
-      </p>
-
-      <p>
-        When confronted about his actions, he generally maintains
-        his characteristic smile and does not readily deny what
-        happened. He may display an unusual, situational reaction
-        of embarrassment, but this should not be confused with
-        genuine innocence, shyness, or harmlessness.
-      </p>
-
-      <p>
-        If he notices that the protagonist is genuinely distressed,
-        he may attempt to make amends and regain their confidence.
-        However, his attempts at reconciliation do not necessarily
-        mean that he understands or accepts the protagonist's
-        boundaries.
-      </p>
-
-      <p>
-        If the protagonist decides to leave the hotel, Squigscar
-        may begin considering other possibilities. He has the
-        ability to physically restrain humans and could use
-        that ability to interfere with the protagonist's departure.
-      </p>
-
-      <p>
-        His attachment to the protagonist does not make him
-        harmless. He may genuinely want the protagonist close
-        while being unwilling to accept a life in which they
-        choose to leave him.
-      </p>
-
-      <p><strong>Known as:</strong> Squigscar.</p>
-      <p><strong>Former human name:</strong> Damien Scarlet Luther.</p>
-      <p><strong>Height:</strong> 3.58 m.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>05. Meathew</summary>
-    <div class="detail-content">
-      <p><span class="status">ACTIVE REGENT / FLOOR 5</span></p>
-
-      <p>
-        Meathew was a talented chef who came to the hotel looking
-        for accommodation. He was interested in unusual culinary
-        ideas, but preferred cooking and refining dishes over
-        committing murder.
-      </p>
-
-      <p>
-        He died one day after arriving at the hotel, after being
-        attacked by Akuya. Damien was also involved in the events
-        surrounding his death.
-      </p>
-
-      <p>
-        His current appearance includes a missing eye, an apron
-        with a knife engraved over the eye area, and dark features
-        connected to the hotel's violence.
-      </p>
-
-      <p>
-        After awakening, his culinary curiosity became an obsession.
-        He uses lower entities as ingredients and forces victims
-        to participate in his disturbing meals.
-      </p>
-
-      <p>
-        The fifth floor is populated by entities with traits connected
-        to cooks, butchers, kitchen helpers, utensils, ingredients,
-        and food preparation.
-      </p>
-
-      <p>
-        Meathew is interested in the protagonist, but Squigscar
-        has forbidden him from taking them.
-      </p>
-
-      <p><strong>Known as:</strong> Meathew.</p>
-      <p><strong>True name:</strong> Unknown.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>06. The Empty Floor / Geraldo</summary>
-    <div class="detail-content">
-      <p><span class="status">VACANT FLOOR / FORMER REGENT</span></p>
-
-      <p>
-        Geraldo was the former Regent of the sixth floor. Humans
-        managed to exorcise him, proving that even a superior entity
-        could be vulnerable.
-      </p>
-
-      <p>
-        His case made the others more careful with their true names.
-        A name may be used to interfere with a soul, and the possibility
-        of being destroyed or liberated is frightening to them.
-      </p>
-
-      <p>
-        Squigscar wants the protagonist to take over the sixth floor.
-        The protagonist refuses.
-      </p>
-
-      <p>
-        The exact circumstances of Geraldo's exorcism and the process
-        through which a human could become a Regent remain undecided.
-      </p>
-
-      <p><strong>Former Regent:</strong> Geraldo.</p>
-      <p><strong>Current status:</strong> Vacant.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>07. Dolita</summary>
-    <div class="detail-content">
-      <p><span class="status">ACTIVE REGENT / FLOOR 7</span></p>
-
-      <p>
-        Dolita was six years old when she died. In life, she was a
-        sweet child who loved porcelain dolls and cloth toys.
-      </p>
-
-      <p>
-        She was killed by Akuya and Damien during the hotel's operating
-        period. Duoei witnessed the event.
-      </p>
-
-      <p>
-        After awakening, Dolita retained a childlike personality,
-        but became extremely cruel. Over time, she developed an
-        obsession with collecting dolls.
-      </p>
-
-      <p>
-        Her current form resembles a supernatural doll. A rabbit
-        plush is an important part of her appearance and abilities.
-        She can use toys to manipulate and torment other entities.
-      </p>
-
-      <p>
-        The seventh floor resembles an island of dolls. Its inhabitants
-        may become cloth figures, with stitches, fabrics, porcelain,
-        plush details, and doll-like features.
-      </p>
-
-      <p><strong>Known as:</strong> Dolita.</p>
-      <p><strong>True name:</strong> Unknown.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>08. Kordiller</summary>
-    <div class="detail-content">
-      <p><span class="status">ACTIVE REGENT / FLOOR 8</span></p>
-
-      <p>
-        Kordiller is Damien's older brother and the former person
-        responsible for the hotel. He had very red hair and was
-        considered handsome, but was bullied and repressed by his family.
-      </p>
-
-      <p>
-        He found companionship in Damien and encouraged his unusual
-        behavior. However, Kordiller was controlling and knew how to use
-        Damien's desire for approval to manipulate him.
-      </p>
-
-      <p>
-        Kordiller obtained the hotel and used it for crimes. He selected
-        visitors according to his interests, particularly people
-        whose emotional suffering attracted his attention.
-      </p>
-
-      <p>
-        His floor carries an oppressive energy. Other Regents avoid
-        it, and there are no known lower entities on the eighth floor.
-        Even ordinary hotel staff avoid entering its rooms.
-      </p>
-
-      <p>
-        Kordiller died in his office as authorities approached the hotel.
-        His current form includes rope, dark horns, reddish elements,
-        and an infernal visual influence.
-      </p>
-
-      <p>
-        He remains isolated on the top floor, away from the other Regents.
-      </p>
-
-      <p><strong>Known as:</strong> Kordiller.</p>
-      <p><strong>True name:</strong> Akuya Scarlet Luther.</p>
-    </div>
-  </details>
+<div class="section-number">05 / THE REGENTS</div><h2>The Superior Entities</h2>
+<p class="lead">Seven active Regents are currently known. The sixth floor is vacant.</p>
+
+<details><summary>01. Wincorter</summary><div class="detail-content">
+<p><span class="status">ACTIVE REGENT / FLOOR 1</span></p>
+<p>Wincorter was a young, handsome, mute man who worked at the hotel. He carried luggage, helped guests, and assisted with the elevator. He communicated through gestures and often smiled politely because people did not understand him.</p>
+<p>He disliked his own face because it resembled his father's. He also disliked his smile, which he felt was false. Reserved and uncomfortable with loud sounds, he rarely complained.</p>
+<p>Now he demands absolute silence on the first floor. His supernatural form includes a dark mass covering part of his face and four tentacle-like extensions ending in small snake heads. The heads can manipulate objects and speak in fragmented phrases. He still uses gestures.</p>
+<p>He was killed by the brothers during the hotel's operation and resents Akuya and Damien. His lower entities are associated with porters, servants, and hotel staff. They cannot make sound on his floor.</p>
+<p><strong>Known as:</strong> Wincorter. <strong>True name:</strong> Unknown.</p>
+</div></details>
+
+<details><summary>02. Knowless</summary><div class="detail-content">
+<p><span class="status">ACTIVE REGENT / FLOOR 2</span></p>
+<p>Knowless was a scientist with a calm temperament and an intense curiosity about human anatomy and the interior of the body. He is not naturally cruel or cold, but his curiosity can become obsessive. He tries to control his impulses and sometimes fails.</p>
+<p>His current form has part of the upper head missing, with a dark tentacle or horn emerging from the opening. One arm is absent and replaced by a dark tentacle that can take the shape of instruments. His clothing is torn. He is clumsy and may knock objects over because humans cannot see him.</p>
+<p>In life, he was a promising scientist whose beliefs were shaped by the knowledge of his time. Akuya and Damien killed him with axes. After awakening, he retained his scientific curiosity. He struggles with modern technology and may misunderstand phones or contemporary medical equipment, despite being intelligent in his specialty.</p>
+<p>Knowless eventually forgave Squigscar. His lower entities often have scientific, anatomical, or assistant-related traits.</p>
+<p><strong>Known as:</strong> Knowless. <strong>True name:</strong> Unknown.</p>
+</div></details>
+
+<details><summary>03. Goldpride</summary><div class="detail-content">
+<p><span class="status">ACTIVE REGENT / FLOOR 3</span></p>
+<p>Goldpride was once Duoei, a wealthy boy raised among privilege and strict expectations. His mother was controlling, miserly, and obsessed with social class. After awakening, Duoei repeated many of the traits he had grown up around.</p>
+<p>He is vain, arrogant, controlling, and cruel. He is obsessed with appearance and social position, cannot stand being outshone, and may disfigure those he considers more beautiful. His floor reflects aristocracy, luxury, hierarchy, and vanity. Lower entities are expected to look immaculate and remain socially inferior to him.</p>
+<p>Duoei and Damien were childhood best friends. Damien had unusual habits from a young age, and Duoei was one of the few people who managed to get close to him. On Damien's birthday, Duoei ran away from home to give him a peacock made of porcelain.</p>
+<p>Later, Duoei arrived at the hotel and witnessed Akuya and Damien involved in Dolita's death. Akuya noticed him, emotionally manipulated Damien, and pressured him into participating in the killing of his friend. Damien repeatedly struck Duoei. Duoei's body was later buried alongside the porcelain peacock.</p>
+<p>After awakening, Duoei became increasingly cruel and began killing people and turning some of them into lower entities of his floor. His current form has visible cracks and retains a dark aristocratic aesthetic with peacock-inspired elements.</p>
+<div class="note gold-note"><strong>VISUAL DISTINCTION:</strong> Duoei's design is not based on a doll, doll joints, or stitched porcelain-doll features. Those visual themes belong primarily to Dolita. The porcelain peacock is a symbol of Duoei's bond with Damien and part of his human history.</div>
+<p>He still calls Squigscar "unicorn", a childhood nickname also used by Akuya. Squigscar usually ignores him, which only makes him more irritated. Their former friendship has become resentment, provocation, and unresolved conflict.</p>
+<p>Goldpride is accompanied by four masked female lower entities who serve as his personal attendants. GoldRat walks on his right side carrying a candle. A bird-masked attendant walks on his left, also carrying a candle. A central attendant carries a fan and uses it to cool Goldpride. The fourth attendant's specific role remains undefined.</p>
+<p><strong>Known as:</strong> Goldpride. <strong>True name:</strong> Duoei (surname unknown).</p>
+</div></details>
+
+<details><summary>04. Squigscar</summary><div class="detail-content">
+<p><span class="status">ACTIVE REGENT / FLOOR 4 / ROOM 404</span></p>
+<p>Squigscar is unpredictable, peculiar, possessive, invasive, and morally detached. He has unusual interests, childhood habits, and a fascination with animals and objects not meant to be eaten. He understands human social rules and discomfort, but may choose to ignore them. He is not simply cute, innocent, shy, or harmless.</p>
+<p>His form resembles a distorted horse or unicorn. He has one horn, a very long neck, pointed teeth including human-like teeth, unusual pointed limbs, and a rope around his neck. He can stretch his neck, fingers, and limbs, detach his head, remain as a head, and transform into a more terrifying appearance.</p>
+<h3>His life as Damien</h3>
+<p>Damien Scarlet Luther was Akuya's younger brother. Their parents favored Damien, while Akuya was bullied and repressed because of his red hair and appearance. Akuya found companionship in Damien and encouraged his unusual behavior. Damien licked stones, ate plants, and experimented on animals. Their parents eventually separated them when Akuya was around seventeen and Damien around eight. Akuya was expelled, while Damien remained at home.</p>
+<p>Akuya later returned, found Damien locked in a closet, and invited him to flee. Damien did not know that Akuya had killed their parents. Years later, Akuya gained control of the hotel and brought Damien there as a miniature manager, calling him his "mini gerente unicórnio". Akuya gradually pressured Damien into violent crimes. Damien was initially uncomfortable but yielded under emotional manipulation and dependence.</p>
+<p>Duoei's death was a turning point. Duoei was one of the few people who offered Damien a connection outside Akuya's violence. Damien killed him under Akuya's manipulation.</p>
+<p>Damien eventually planned to escape with money and report the crimes. Akuya discovered the plan. Damien pretended to apologize, but when Akuya demanded proof of loyalty involving Damien's own life, Damien could not follow through and fled. Akuya caught him, removed his legs, and killed him with a fatal blow to the head using a pointed stone. His body was taken to room 404.</p>
+<p>Damien awakened approximately eighty years later. At first, he wandered the hotel, observed rats, poked small animals, and repeated childhood habits. Over time, he began attacking violent or aggressive people and those he associated with his former self or Akuya.</p>
+<h3>Relationship with the protagonist</h3>
+<p>The protagonist accidentally asked Squigscar to marry them while carrying out unspecified illegal activities. Squigscar accepted and now considers the protagonist his legitimate husband. There is no official marriage, and the protagonist does not necessarily share this interpretation.</p>
+<p>Before the protagonist gained spiritual sight, Squigscar made supernatural manifestations, including licking. Other actions from that period remain unknown. Once the protagonist could see him, Squigscar was delighted, while the protagonist was frightened. The protagonist can now interrupt his manifestations and confront him.</p>
+<p>Squigscar may smile, answer in peculiar ways, recognize serious discomfort, or attempt to make amends. This does not turn him into a gentle or moral character. If the protagonist wants to leave, he may first try to restore closeness and may eventually use his supernatural authority to keep them inside.</p>
+<p><strong>Favorite lower entities:</strong> Kittyn and CerRui. <strong>True name:</strong> Damien Scarlet Luther. <strong>Height:</strong> 3.58 m.</p>
+</div></details>
+
+<details><summary>05. Meathew</summary><div class="detail-content">
+<p><span class="status">ACTIVE REGENT / FLOOR 5</span></p>
+<p>Meathew was a talented chef with an intense interest in culinary experimentation. He was curious about cooking with human meat but did not initially want to become a murderer. He was independent and disliked having assistants.</p>
+<p>He arrived at the hotel and died after only one day. Akuya attacked him, and Meathew fought back. Damien was involved. Meathew was killed using the hotel's stove, which influenced his supernatural appearance.</p>
+<p>His current form has one eye missing, an apron of knives engraved with an eye, and a dark tentacle or horn emerging from his head. After awakening, his culinary curiosity became an obsession. He uses lower entities as ingredients and may force them to eat his dishes. His aura can compel lower entities to participate.</p>
+<p>He is interested in the protagonist's flesh, but Squigscar prevents him from acting on that interest. Squigscar considers Meathew an excellent cook and says he might have been a fan if they had met under different circumstances.</p>
+<p>His lower entities are associated with cooks, butchers, kitchen assistants, ingredients, and utensils. <strong>True name:</strong> Unknown.</p>
+</div></details>
+
+<details><summary>06. Geraldo / Vacant floor</summary><div class="detail-content">
+<p><span class="status">FORMER REGENT / FLOOR 6 / EXORCISED</span></p>
+<p>The sixth floor is currently empty. Geraldo was its former Regent and was exorcised by humans. His removal changed how the other Regents treat the secrecy of their true names.</p>
+<p>When Geraldo is mentioned, the other Regents may automatically ask forgiveness. Some demand that the others remember him and may slap someone who forgets. Squigscar says he would tattoo Geraldo's name on his forehead if he could. Squigscar and Akuya oddly struggle to remember him properly, while the others have inconsistent memories.</p>
+<p>Geraldo represents the possibility that a Regent can be vulnerable and that a true name may allow a soul to be released or destroyed. Squigscar wants the protagonist to become the new Regent of the sixth floor, but the protagonist refuses.</p>
+<p><strong>True name:</strong> Unknown.</p>
+</div></details>
+
+<details><summary>07. Dolita</summary><div class="detail-content">
+<p><span class="status">ACTIVE REGENT / FLOOR 7</span></p>
+<p>Dolita was a six-year-old girl who loved porcelain and cloth dolls. She was a child and was not inherently cruel during her human life. Akuya and Damien killed her. Duoei witnessed her death before he was later killed himself.</p>
+<p>Her current personality retains a childlike quality, but decades as an entity have made her extremely cruel. She collects dolls. At first she made dolls herself, but eventually that was no longer enough.</p>
+<p>Her supernatural form is doll-like, with a bunny plush as a central object. She can manipulate victims through toys and dolls. Her floor resembles an island of dolls. Lower entities are influenced by cloth, plush, fabric, seams, stitching, and porcelain. Some are sewn to walls or incorporated into the floor's decor.</p>
+<p><strong>Known as:</strong> Dolita. <strong>True name:</strong> Unknown.</p>
+</div></details>
+
+<details><summary>08. Kordiller / Akuya Scarlet Luther</summary><div class="detail-content">
+<p><span class="status">ACTIVE REGENT / FLOOR 8 / FORMER HOTEL OWNER</span></p>
+<p>Kordiller was Akuya Scarlet Luther, Damien's older brother and the original owner of the hotel. He was a handsome red-haired man who was bullied and repressed because of his appearance, while his parents favored Damien.</p>
+<p>Akuya found companionship in Damien, encouraged his unusual behavior, and cultivated Damien's dependence on his approval. He was controlling and manipulative, using that dependence to coerce Damien into crimes.</p>
+<p>Akuya used the hotel as a place for crimes and selected visitors according to his interests. He enjoyed emotional suffering and exerting control over others. When investigations and police approached in 1874, he died in the hotel office before facing justice.</p>
+<p>His current form carries rope, dark or red horns, and a hellfire-like aesthetic. The eighth floor is oppressive. Other Regents avoid it, and very few lower entities remain there because of Akuya's overwhelming presence.</p>
+<p><strong>Known as:</strong> Kordiller. <strong>True name:</strong> Akuya Scarlet Luther.</p>
+</div></details>
 </section>
-
-<!-- 06 RESIDENTS -->
 
 <section id="residents">
-  <div class="section-number">06 / THE RESIDENTS</div>
-  <h2>Other inhabitants</h2>
+<div class="section-number">06 / THE RESIDENTS</div><h2>Lower Entities & Other Residents</h2>
+<p class="lead">The known residents are only a small part of the hotel's population. More entities will be added as their designs and histories are developed.</p>
+<div class="search-wrap"><input id="archiveSearch" type="search" placeholder="Search residents by name or floor..." aria-label="Search residents"></div>
 
-  <p>
-    Not every important character in the hotel is a Regent.
-    Some of the most memorable inhabitants are lower entities,
-    humans, or figures whose origins are still unknown.
-  </p>
+<details class="resident-entry"><summary>Kittyn / Félix Uruguma</summary><div class="detail-content">
+<p><span class="status">LOWER ENTITY / FLOOR 4</span></p>
+<p>Kittyn is a 2.15 m tall cat clown. One eye is displaced downward and the other has a spiral appearance. His anatomy is animal-like and theatrical.</p>
+<p>In life, Félix was repressed and had psychopathic tendencies. After death, he sees his new condition as a gift because he can act more freely.</p>
+<p>He is one of Squigscar's closest and favorite lower entities. He dislikes the protagonist and wants to throw them in the trash. His jealousy comes from Squigscar paying attention to the protagonist, not from a desire to protect them. Kittyn is irritated by Squigscar's one-sided marriage interpretation.</p>
+<p>Despite his hostility, Kittyn likes the rice balls made by the protagonist. He may act affectionate or protective, but his intentions can be very different from what readers initially assume.</p>
+<p><strong>True name:</strong> Félix Uruguma. <strong>Height:</strong> 2.15 m.</p>
+</div></details>
 
-  <details>
-    <summary>Kittyn</summary>
-    <div class="detail-content">
-      <p><span class="status">LOWER ENTITY / FLOOR 4</span></p>
+<details class="resident-entry"><summary>CerRui</summary><div class="detail-content">
+<p><span class="status">LOWER ENTITY / FLOOR 4</span></p>
+<p>CerRui is a large black dog-like entity. One eye is located in his throat, affecting his ability to speak. His true name is unknown. He measures approximately 1.92 m while lying or standing on all fours.</p>
+<p>He is one of Squigscar's favorite lower entities. His personality and full history are still being developed.</p>
+<p><strong>True name:</strong> Unknown. <strong>Height:</strong> approximately 1.92 m on all fours.</p>
+</div></details>
 
-      <p>
-        A cat-like clown with one eye positioned lower than the other
-        and a spiral eye. The deliberately misaligned appearance
-        gives Kittyn a strange, unsettling expression.
-      </p>
+<details class="resident-entry"><summary>GoldRat</summary><div class="detail-content">
+<p><span class="status">LOWER ENTITY / FLOOR 3 / PERSONAL ATTENDANT</span></p>
+<p>GoldRat is one of Goldpride's personal attendants and the principal lower entity among the group of masked women who accompany him. Despite the name, she is not exactly a rat-like creature. Her most recognizable feature is a golden rat mask that completely covers her head.</p>
+<p>She carries a candle and walks on Goldpride's right side. Her appearance is carefully styled, reflecting Goldpride's influence and the elegant aesthetic of the third floor. She cannot speak because her entire head is replaced by a mask; she communicates through gestures and movements.</p>
+<p>Her behavior becomes especially provocative around Kittyn. She enjoys teasing him, pulling his ears unexpectedly, pushing him around, and making fun of him through gestures. She has even been known to kick him down the stairs. Kittyn struggles to read her expressions because there is no visible face behind the mask.</p>
+<h3>Goldpride's attendants</h3>
+<ul>
+<li><strong>GoldRat:</strong> Walks on Goldpride's right side, carrying a candle. Her mask resembles a golden rat.</li>
+<li><strong>The bird-masked attendant:</strong> Walks on Goldpride's left side, also carrying a candle.</li>
+<li><strong>The fan attendant:</strong> Walks in the middle, holding a fan and using it to cool Goldpride.</li>
+<li><strong>The fourth attendant:</strong> Her mask and specific function have not yet been established.</li>
+</ul>
+<p>The other attendants also cannot speak because their masks completely replace their heads. <strong>True name:</strong> Unknown.</p>
+</div></details>
 
-      <p>
-        In life, Kittyn was a repressed individual. After awakening,
-        death felt like a gift and an opportunity to act without
-        the restrictions that once held them back.
-      </p>
+<details class="resident-entry"><summary>The Protagonist</summary><div class="detail-content">
+<p><span class="status">HUMAN / MAIN CHARACTER</span></p>
+<p>The protagonist represents the reader and intentionally has an open identity. They are human, short on money, and rent a suspiciously cheap room in the hotel. They have heterochromia: one green eye and one black eye.</p>
+<p>At first, they could not see entities. After an accidental marriage proposal to Squigscar, followed by supernatural events, they gained the ability to see the hotel's inhabitants. Squigscar considers the protagonist his husband, but this is his personal interpretation. There is no official or mutually agreed marriage.</p>
+<p>The protagonist can reject unwanted contact and confront Squigscar. They refuse his wish for them to become Regent of the sixth floor.</p>
+</div></details>
 
-      <p>
-        Kittyn is one of Squigscar's closest companions and favorite
-        lower entities. However, Kittyn dislikes the protagonist
-        and wants to throw them in the trash.
-      </p>
-
-      <p>
-        Kittyn becomes jealous when Squigscar gives the protagonist
-        attention. Squigscar's decision to consider the protagonist
-        his husband has made Kittyn increasingly irritated.
-      </p>
-
-      <p>
-        Kittyn is not trying to protect the protagonist. Their
-        reactions come from jealousy and dislike.
-      </p>
-
-      <p>
-        Kittyn also enjoys rice balls prepared by the protagonist.
-      </p>
-
-      <p><strong>Known as:</strong> Kittyn.</p>
-      <p><strong>True name:</strong> Félix Uruguma.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>CerRui</summary>
-    <div class="detail-content">
-      <p><span class="status">LOWER ENTITY / FLOOR 4</span></p>
-
-      <p>
-        A large black dog with an eye in its throat. Because of this
-        feature, CerRui cannot speak normally.
-      </p>
-
-      <p>
-        CerRui is one of Squigscar's favorite lower entities.
-        Its personality is still being developed.
-      </p>
-
-      <p><strong>Known as:</strong> CerRui.</p>
-      <p><strong>True name:</strong> Unknown.</p>
-      <p><strong>Height:</strong> Approximately 1.92 m when lying or resting on all fours.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>GoldRat</summary>
-    <div class="detail-content">
-      <p><span class="status">LOWER ENTITY / FLOOR 3 / PERSONAL ATTENDANT</span></p>
-
-      <p>
-        GoldRat is one of Goldpride's personal attendants and the
-        principal lower entity among the group of masked women who
-        accompany him.
-      </p>
-
-      <p>
-        Despite being referred to as a rat, GoldRat is not exactly
-        a rat-like creature. Her most recognizable feature is a
-        golden rat mask that completely covers her head.
-      </p>
-
-      <p>
-        She carries a candle and walks on Goldpride's right side.
-        Her appearance is carefully styled, reflecting Goldpride's
-        influence and the elegant aesthetic of the third floor.
-      </p>
-
-      <p>
-        GoldRat cannot speak because her entire head is replaced
-        by a mask. She communicates through gestures and movements.
-      </p>
-
-      <p>
-        Her behavior becomes especially provocative around Kittyn.
-        She enjoys teasing him, pulling his ears unexpectedly,
-        pushing him around, and making fun of him through gestures.
-        She has even been known to kick him down the stairs.
-      </p>
-
-      <p>
-        Kittyn can speak, but cannot read GoldRat's expressions
-        because there is no visible face behind her mask. This
-        makes their rivalry even more frustrating for him.
-      </p>
-
-      <h3 style="margin-top:25px;">Goldpride's attendants</h3>
-
-      <p>
-        GoldRat is accompanied by three other masked women.
-        Together, they form a group of four personal attendants
-        who remain close to Goldpride.
-      </p>
-
-      <ul>
-        <li>
-          <strong>GoldRat:</strong> Walks on Goldpride's right side,
-          carrying a candle. Her mask resembles a golden rat.
-        </li>
-        <li>
-          <strong>The bird-masked attendant:</strong> Walks on
-          Goldpride's left side, also carrying a candle.
-        </li>
-        <li>
-          <strong>The fan attendant:</strong> Walks in the middle,
-          holding a fan and using it to cool Goldpride.
-        </li>
-        <li>
-          <strong>The fourth attendant:</strong> Her mask and specific
-          function have not yet been established.
-        </li>
-      </ul>
-
-      <p>
-        Like GoldRat, the other attendants cannot speak because
-        their masks completely replace their heads.
-      </p>
-
-      <p><strong>Known as:</strong> GoldRat.</p>
-      <p><strong>Role:</strong> Goldpride's principal lower entity and attendant.</p>
-      <p><strong>True name:</strong> Unknown.</p>
-    </div>
-  </details>
-
-  <details>
-    <summary>The Protagonist</summary>
-    <div class="detail-content">
-      <p><span class="status">HUMAN / MAIN CHARACTER</span></p>
-
-      <p>
-        The protagonist represents the reader and intentionally
-        has an open identity. They are a human who is short on money
-        and rents a suspiciously cheap room in the hotel.
-      </p>
-
-      <p>
-        They have heterochromia: one green eye and one black eye.
-      </p>
-
-      <p>
-        When they first arrived, they could not see entities.
-        After accidentally asking the fourth-floor Regent for marriage,
-        Squigscar accepted and began haunting them more intensely.
-        Eventually, the protagonist developed the ability to see
-        the supernatural inhabitants of the hotel.
-      </p>
-
-      <p>
-        Squigscar considers the protagonist his husband.
-        This is his personal interpretation, not an actual marriage
-        or a mutually agreed relationship.
-      </p>
-
-      <p>
-        The protagonist does not necessarily share Squigscar's
-        understanding of their relationship. They can reject
-        his unwanted contact and do not have to accept his behavior.
-      </p>
-
-      <p>
-        Squigscar wants the protagonist to become Regent of
-        the sixth floor. The protagonist refuses.
-      </p>
-
-      <p>
-        The protagonist is also capable of being physically restrained
-        by entities. Leaving the hotel is not necessarily possible
-        without confronting the inhabitants who may interfere.
-      </p>
-    </div>
-  </details>
-
-  <details>
-    <summary>The Hotel Owner</summary>
-    <div class="detail-content">
-      <p><span class="status">IDENTITY UNKNOWN</span></p>
-
-      <p>
-        The owner manages the hotel and attracts new residents
-        with extremely cheap rent. They can see entities and know
-        the truth about the building.
-      </p>
-
-      <p>
-        The owner knowingly provides new humans as a source of
-        emotional energy. Their species, age, identity, and motives
-        remain unknown.
-      </p>
-    </div>
-  </details>
-
-  <div class="note">
-    <strong>MORE RESIDENTS WILL BE ADDED.</strong>
-    The lower entities are not all documented yet. Their profiles
-    will appear here gradually as the hotel expands.
-  </div>
+<details class="resident-entry"><summary>The Hotel Owner</summary><div class="detail-content">
+<p><span class="status">IDENTITY UNKNOWN</span></p>
+<p>The owner manages the hotel, attracts residents with extremely cheap rent, can see entities, and knows the truth about the building. Their identity, nature, origin, relationship with the Regents, and motives remain unknown.</p>
+</div></details>
 </section>
-
-<!-- 07 CHARACTER GALLERY -->
 
 <section id="gallery">
-  <div class="section-number">07 / CHARACTER ARCHIVE</div>
-  <h2>Character Gallery</h2>
-
-  <div class="gallery-intro">
-    <p class="lead">
-      An archive dedicated to the characters of
-      The Eight Regents Hotel 404.
-    </p>
-
-    <p>
-      Explore the characters through their individual character sheets,
-      designs, and visual references.
-    </p>
-  </div>
-
-  <div class="gallery">
-
-    <!--
-    TO ADD A CHARACTER SHEET:
-
-    1. Put the image inside the "images" folder.
-    2. Replace the placeholder below with an img element.
-    3. Change the filename to match your actual image.
-
-    Example:
-    <img src="images/squigscar.png" alt="Squigscar character sheet">
-    -->
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 1 / REGENT</span>
-        <h3>Wincorter</h3>
-        <p>Known as Wincorter.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 2 / REGENT</span>
-        <h3>Knowless</h3>
-        <p>Known as Knowless.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 3 / REGENT</span>
-        <h3>Goldpride</h3>
-        <p>Known as Goldpride.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 4 / REGENT</span>
-        <h3>Squigscar</h3>
-        <p>Known as Squigscar.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 5 / REGENT</span>
-        <h3>Meathew</h3>
-        <p>Known as Meathew.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 7 / REGENT</span>
-        <h3>Dolita</h3>
-        <p>Known as Dolita.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 8 / REGENT</span>
-        <h3>Kordiller</h3>
-        <p>Known as Kordiller.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 4 / LOWER ENTITY</span>
-        <h3>Kittyn</h3>
-        <p>Known as Kittyn.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 4 / LOWER ENTITY</span>
-        <h3>CerRui</h3>
-        <p>Known as CerRui.</p>
-      </div>
-    </div>
-
-    <div class="character-card">
-      <div class="character-image">CHARACTER SHEET COMING SOON</div>
-      <div class="character-info">
-        <span class="tag">FLOOR 3 / LOWER ENTITY</span>
-        <h3>GoldRat</h3>
-        <p>Goldpride's personal attendant.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="note gold-note">
-    <strong>ABOUT THIS ARCHIVE</strong>
-
-    <p>
-      Character sheets will be added gradually as they are completed.
-      This gallery will grow alongside the project.
-    </p>
-
-    <p>
-      Please keep in mind that some character details, designs,
-      and information may change in the future as the project develops.
-    </p>
-  </div>
+<div class="section-number">07 / CHARACTER ARCHIVE</div><h2>Character Gallery</h2>
+<div class="gallery-intro">
+<p class="lead">An archive dedicated to the characters of The Eight Regents Hotel 404.</p>
+<p>Explore the characters through their individual character sheets, designs, and visual references. Character sheets can be added to the <code>images</code> folder and linked here as they are completed.</p>
+</div>
+<div class="gallery">
+<div class="character-card"><div class="character-image"><img src="images/kittyn.png" alt="Kittyn character sheet" onerror="this.parentElement.textContent='CHARACTER SHEET COMING SOON'"></div><div class="character-info"><span class="tag">FLOOR 4 / LOWER ENTITY</span><h3>Kittyn</h3><p>Félix Uruguma.</p></div></div>
+<div class="character-card"><div class="character-image"><img src="images/squigscar.png" alt="Squigscar character sheet" onerror="this.parentElement.textContent='CHARACTER SHEET COMING SOON'"></div><div class="character-info"><span class="tag">FLOOR 4 / REGENT</span><h3>Squigscar</h3><p>Damien Scarlet Luther.</p></div></div>
+<div class="character-card"><div class="character-image">CHARACTER SHEET COMING SOON</div><div class="character-info"><span class="tag">FLOOR 1 / REGENT</span><h3>Wincorter</h3><p>Hotel porter and silence.</p></div></div>
+<div class="character-card"><div class="character-image">CHARACTER SHEET COMING SOON</div><div class="character-info"><span class="tag">FLOOR 2 / REGENT</span><h3>Knowless</h3><p>Scientist and anatomy.</p></div></div>
+<div class="character-card"><div class="character-image">CHARACTER SHEET COMING SOON</div><div class="character-info"><span class="tag">FLOOR 3 / REGENT</span><h3>Goldpride</h3><p>Duoei. Aristocracy, vanity, and cracks.</p></div></div>
+<div class="character-card"><div class="character-image">CHARACTER SHEET COMING SOON</div><div class="character-info"><span class="tag">FLOOR 5 / REGENT</span><h3>Meathew</h3><p>Chef and culinary obsession.</p></div></div>
+<div class="character-card"><div class="character-image">CHARACTER SHEET COMING SOON</div><div class="character-info"><span class="tag">FLOOR 7 / REGENT</span><h3>Dolita</h3><p>Dolls, fabric, and porcelain.</p></div></div>
+<div class="character-card"><div class="character-image">CHARACTER SHEET COMING SOON</div><div class="character-info"><span class="tag">FLOOR 8 / REGENT</span><h3>Kordiller</h3><p>Akuya Scarlet Luther.</p></div></div>
+<div class="character-card"><div class="character-image">CHARACTER SHEET COMING SOON</div><div class="character-info"><span class="tag">FLOOR 4 / LOWER ENTITY</span><h3>CerRui</h3><p>Black canine entity.</p></div></div>
+<div class="character-card"><div class="character-image">CHARACTER SHEET COMING SOON</div><div class="character-info"><span class="tag">FLOOR 3 / LOWER ENTITY</span><h3>GoldRat</h3><p>Goldpride's personal attendant.</p></div></div>
+</div>
+<div class="note gold-note"><strong>ABOUT THIS ARCHIVE</strong><p>Character sheets will be added gradually as they are completed. This gallery will grow alongside the project. Some designs and information may change as development continues.</p></div>
 </section>
-
-<!-- 08 RELATIONSHIPS -->
 
 <section id="relationships">
-  <div class="section-number">08 / CONNECTIONS</div>
-  <h2>Relationships</h2>
-
-  <div class="grid">
-    <div class="card">
-      <h3>Squigscar & Kordiller</h3>
-      <p>
-        Brothers. A relationship shaped by control, manipulation,
-        dependence, and violence.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Squigscar & Goldpride</h3>
-      <p>
-        Childhood best friends whose relationship was destroyed
-        by Kordiller's manipulation and Duoei's death.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Squigscar & Wincorter</h3>
-      <p>Wincorter holds resentment toward the brothers.</p>
-    </div>
-
-    <div class="card">
-      <h3>Squigscar & Knowless</h3>
-      <p>
-        Knowless forgave Squigscar for his involvement
-        in the events surrounding his death.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Squigscar & Meathew</h3>
-      <p>
-        Meathew is interested in the protagonist. Squigscar
-        has forbidden him from taking them.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Squigscar, Kittyn & CerRui</h3>
-      <p>
-        The strange little circle of floor four. Their activities
-        are rarely ordinary.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Squigscar & The Protagonist</h3>
-      <p>
-        Squigscar considers the protagonist his legitimate husband
-        after accepting an accidental marriage proposal.
-        The protagonist does not share this interpretation.
-        Their relationship is marked by possessiveness, unwanted
-        attention, spiritual contact, and an unequal distribution
-        of power. Squigscar may attempt reconciliation when
-        confronted, but his attachment can become threatening
-        when the protagonist considers leaving the hotel.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Kittyn & The Protagonist</h3>
-      <p>
-        Kittyn dislikes the protagonist and becomes increasingly
-        irritated by the attention Squigscar gives them.
-        Squigscar's decision to consider the protagonist his
-        husband has further complicated their relationship.
-        Kittyn is particularly displeased with the changes
-        occurring within their usual circle on the fourth floor.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Kittyn & GoldRat</h3>
-      <p>
-        A one-sided rivalry full of teasing and provocation.
-        GoldRat enjoys annoying Kittyn, while Kittyn struggles
-        to understand what she is thinking behind her mask.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Goldpride & GoldRat</h3>
-      <p>
-        GoldRat is Goldpride's principal lower entity and personal
-        attendant, accompanying him around the hotel.
-      </p>
-    </div>
-  </div>
-
-  <p class="small">
-    Some relationships are still being developed. Unknown connections
-    will remain open until their stories are established.
-  </p>
+<div class="section-number">08 / CONNECTIONS</div><h2>Relationships</h2>
+<div class="grid">
+<div class="card"><h3>Squigscar & Kordiller</h3><p>Brothers. Their relationship is shaped by control, manipulation, dependence, and violence.</p></div>
+<div class="card"><h3>Squigscar & Goldpride</h3><p>Childhood best friends whose relationship was destroyed by Akuya's manipulation and Duoei's death. Goldpride still calls him "unicorn".</p></div>
+<div class="card"><h3>Squigscar & Wincorter</h3><p>Wincorter resents Akuya and Damien for their actions during the hotel's operation.</p></div>
+<div class="card"><h3>Squigscar & Knowless</h3><p>Knowless eventually forgave Squigscar.</p></div>
+<div class="card"><h3>Squigscar & Meathew</h3><p>Meathew is interested in the protagonist's flesh. Squigscar prevents him from acting on that interest.</p></div>
+<div class="card"><h3>Squigscar & Dolita</h3><p>Their relationship has not yet been fully established.</p></div>
+<div class="card"><h3>Goldpride & GoldRat</h3><p>GoldRat is his principal lower entity and personal attendant.</p></div>
+<div class="card"><h3>Kittyn & GoldRat</h3><p>A one-sided rivalry full of teasing and provocation. GoldRat enjoys annoying Kittyn.</p></div>
+<div class="card"><h3>Squigscar & the protagonist</h3><p>Squigscar considers the protagonist his husband. The protagonist does not necessarily accept this interpretation, creating a dynamic involving possessiveness, unequal power, and freedom.</p></div>
+</div>
 </section>
-
-<!-- 09 LORE -->
-
-<section id="lore">
-  <div class="section-number">09 / LORE</div>
-  <h2>Things the hotel remembers</h2>
-
-  <details>
-    <summary>The legend of Geraldo</summary>
-    <div class="detail-content">
-      <p>
-        Geraldo was the former Regent of the sixth floor. Humans
-        managed to exorcise him, proving that even a superior entity
-        could be vulnerable.
-      </p>
-
-      <p>
-        The other Regents became more secretive about their true names.
-        The possibility of losing their existence, or being liberated
-        against their will, became a source of fear.
-      </p>
-
-      <p>
-        Their memories of Geraldo are inconsistent. Even Squigscar
-        and Kordiller do not remember him in exactly the same way.
-      </p>
-
-      <p>
-        There is also a running joke: whenever someone mentions
-        Geraldo, the other Regents instinctively apologize.
-        Some insist that everyone should remember him.
-      </p>
-    </div>
-  </details>
-
-  <details>
-    <summary>Central themes</summary>
-    <div class="detail-content">
-      <ul>
-        <li>Identity and the subconscious.</li>
-        <li>Death and the way it influences appearance.</li>
-        <li>Emotional distortion and the loss of human feelings.</li>
-        <li>Hierarchy, control, and power.</li>
-        <li>How people repeat patterns from their past.</li>
-        <li>The difference between appearance, personality, and morality.</li>
-        <li>Possession, unwanted attachment, and distorted intimacy.</li>
-        <li>The conflict between affection and control.</li>
-      </ul>
-
-      <p>
-        The entities are not simply divided into good and evil.
-        Their histories, choices, and contradictions matter.
-        A character can be affectionate and dangerous, calm and
-        disturbing, or sympathetic without being innocent.
-      </p>
-    </div>
-  </details>
-</section>
-
-<!-- 10 COMICS -->
 
 <section id="comics">
-  <div class="section-number">10 / COMICS & STORIES</div>
-  <h2>Comics</h2>
-
-  <p class="lead">
-    I create comics featuring the characters and universe
-    of The Eight Regents Hotel 404.
-  </p>
-
-  <p>
-    New comics will be published on my social media platforms.
-    Follow my accounts to keep up with new releases.
-  </p>
-
-  <div class="note gold-note">
-    Comics and updates can be found on my social media accounts.
-  </div>
+<div class="section-number">09 / COMICS</div><h2>First planned comic</h2>
+<p class="lead">A short scene involving Squigscar, the protagonist, Kittyn, and CerRui.</p>
+<div class="timeline">
+<div class="event"><strong>01</strong><p>The protagonist kisses Squigscar on the cheek.</p></div>
+<div class="event"><strong>02</strong><p>Squigscar responds in his own peculiar way.</p></div>
+<div class="event"><strong>03</strong><p>He swallows the protagonist's head as an unusual form of a kiss, then releases them.</p></div>
+<div class="event"><strong>04</strong><p>He licks the protagonist's cheek.</p></div>
+<div class="event"><strong>05</strong><p>Kittyn watches, visibly jealous, then approaches upside-down.</p></div>
+<div class="event"><strong>06</strong><p>Kittyn grabs the protagonist and runs. Squigscar does not understand immediately.</p></div>
+<div class="event"><strong>07</strong><p>Squigscar transforms into a more terrifying form and chases them.</p></div>
+<div class="event"><strong>08</strong><p>CerRui watches the confusion before following.</p></div>
+</div>
+<div class="note"><strong>READER MISDIRECTION:</strong> Kittyn may initially look as though he is protecting the protagonist. In reality, he dislikes them and wants to throw them in the trash. He is jealous of Squigscar's attention. Despite this, Kittyn likes the rice balls made by the protagonist.</div>
 </section>
 
-<!-- 11 CREATOR -->
-
-<section id="about-creator">
-  <div class="section-number">11 / CREATOR</div>
-  <h2>Find the creator</h2>
-
-  <p class="lead">
-    Follow the work, illustrations, updates, and other creations
-    connected to The Eight Regents Hotel 404.
-  </p>
-
-  <div class="social-section">
-    <h3>FOLLOW NAIXXO!</h3>
-    <p>Find me around the internet.</p>
-
-    <div class="social-buttons">
-      <a class="social-big"
-         href="https://x.com/Yukijineru"
-         target="_blank"
-         rel="noopener">
-        <strong>X / TWITTER</strong>
-        <span>@Yukijineru</span>
-      </a>
-
-      <a class="social-big"
-         href="https://naix0x.tumblr.com/"
-         target="_blank"
-         rel="noopener">
-        <strong>TUMBLR</strong>
-        <span>naix0x</span>
-      </a>
-    </div>
-  </div>
+<section id="themes">
+<div class="section-number">10 / THEMES</div><h2>Central themes</h2>
+<div class="grid">
+<div class="card"><h3>Identity & subconscious</h3><p>A person's history and inner world influence the form they take after death.</p></div>
+<div class="card"><h3>Emotional deformation</h3><p>Death and accumulated experiences can intensify or distort existing traits.</p></div>
+<div class="card"><h3>Hierarchy</h3><p>The hotel's floors reproduce social structures, power, and domination.</p></div>
+<div class="card"><h3>Repetition</h3><p>Entities may repeat patterns from their human lives: Goldpride echoes his mother, Squigscar repeats childhood habits, Meathew repeats his culinary obsession, Dolita returns to dolls, and Akuya repeats control.</p></div>
+<div class="card"><h3>Dependency & feeding</h3><p>Energy, emotional dependence, and unequal relationships shape survival inside the hotel.</p></div>
+<div class="card"><h3>Freedom & possession</h3><p>The hotel explores the conflict between a person's autonomy and the desire of others to control or keep them.</p></div>
+</div>
+<p class="note gold-note">The characters are not divided into simple categories of good and evil. Their histories, choices, contradictions, and relationships matter.</p>
 </section>
 
+<section id="timeline">
+<div class="section-number">11 / CHRONOLOGY</div><h2>Chronological overview</h2>
+<div class="timeline">
+<div class="event"><strong>Before 1867</strong><p>Akuya and Damien grow up in the Scarlet Luther family. Their childhood relationship and family history shape what happens later.</p></div>
+<div class="event"><strong>1867</strong><p>The hotel is founded in Brazil.</p></div>
+<div class="event"><strong>1867–1874</strong><p>Akuya controls the hotel. Wincorter, Knowless, Duoei, Dolita, and Meathew die during the hotel's operation. Damien is involved in several deaths.</p></div>
+<div class="event"><strong>1874</strong><p>The hotel closes after complaints and investigations. Akuya dies in the hotel office before facing justice.</p></div>
+<div class="event"><strong>Approximately 80 years after each death</strong><p>The future Regents awaken as entities. Their awakening dates vary according to their individual deaths.</p></div>
+<div class="event"><strong>Later decades</strong><p>The entities develop their current forms, personalities, and relationships. Geraldo is exorcised from the sixth floor.</p></div>
+<div class="event"><strong>Present day</strong><p>The hotel reopens. The protagonist arrives unable to see entities, accidentally asks Squigscar to marry them, and later gains spiritual sight.</p></div>
+</div>
+</section>
+
+<section id="registry">
+<div class="section-number">12 / NAME REGISTRY</div><h2>Known names</h2>
+<h3>Regents</h3>
+<ul>
+<li>Floor 1: Wincorter — true name unknown.</li>
+<li>Floor 2: Knowless — true name unknown.</li>
+<li>Floor 3: Goldpride — true name Duoei; surname unknown.</li>
+<li>Floor 4: Squigscar — true name Damien Scarlet Luther.</li>
+<li>Floor 5: Meathew — true name unknown.</li>
+<li>Floor 6: Geraldo — former Regent; true name unknown.</li>
+<li>Floor 7: Dolita — true name unknown.</li>
+<li>Floor 8: Kordiller — true name Akuya Scarlet Luther.</li>
+</ul>
+<h3>Lower entities</h3>
+<ul>
+<li>Kittyn — Félix Uruguma, Floor 4.</li>
+<li>CerRui — true name unknown, Floor 4.</li>
+<li>GoldRat — true name unknown, Floor 3.</li>
+</ul>
+<p>The protagonist is human and intentionally has an open identity. The current hotel owner's identity remains unknown. Goldpride's three other masked attendants have no established names.</p>
+</section>
+
+<section id="unknown">
+<div class="section-number">13 / UNRESOLVED FILES</div><h2>Information still being developed</h2>
+<ul>
+<li>Duoei's surname.</li>
+<li>True names of Wincorter, Knowless, Meathew, Dolita, CerRui, GoldRat, and Geraldo.</li>
+<li>GoldRat's complete identity, history, and design.</li>
+<li>The identities and histories of Goldpride's three other masked attendants.</li>
+<li>Geraldo's full history.</li>
+<li>The hotel's builder and the basement, if one exists.</li>
+<li>The current owner's identity, origin, nature, and motives.</li>
+<li>Relationships that have not yet been developed.</li>
+<li>Other lower entities living on the remaining floors.</li>
+<li>Exact feeding limits, amounts, and control.</li>
+<li>Which entities can directly kill humans physically.</li>
+<li>The limits of an entity's ability to prevent a human from leaving.</li>
+<li>The exact circumstances of the protagonist's accidental proposal and awakening of spiritual sight.</li>
+<li>Squigscar's other manifestations before the protagonist could see him.</li>
+<li>The limits of Squigscar's manifestations and his definitive reaction if the protagonist leaves.</li>
+</ul>
+</section>
+
+<section id="social">
+<div class="section-number">14 / CREATOR</div><h2>Follow the project</h2>
+<div class="social-section">
+<h3>The Eight Regents Hotel 404</h3>
+<p>An original project created by Naixxo. Character designs, story, and worldbuilding are developed as the project grows.</p>
+<div class="social-buttons">
+<a class="social-big" href="https://x.com/Yukijineru" target="_blank" rel="noopener"><strong>X / TWITTER</strong><span>@Yukijineru</span></a>
+<a class="social-big" href="https://naix0x.tumblr.com/" target="_blank" rel="noopener"><strong>TUMBLR</strong><span>naix0x</span></a>
+</div>
+</div>
+</section>
 </main>
 
 <footer>
-  <div class="footer-social">
-    <a href="https://x.com/Yukijineru" target="_blank" rel="noopener">X / @Yukijineru</a>
-    <a href="https://naix0x.tumblr.com/" target="_blank" rel="noopener">Tumblr / naix0x</a>
-  </div>
-
-  <span class="small">The Eight Regents Hotel 404</span>
-
-  <strong>CREATED BY NAIXXO!</strong>
-
-  <p class="small">
-    All characters and original concepts belong to their creator.
-  </p>
+<div>THE EIGHT REGENTS HOTEL 404</div>
+<strong>CREATED BY NAIXXO!</strong>
+<div class="footer-social"><a href="https://x.com/Yukijineru" target="_blank" rel="noopener">X</a><a href="https://naix0x.tumblr.com/" target="_blank" rel="noopener">Tumblr</a></div>
+<div class="small">A work in progress. Information may be updated as the project develops.</div>
 </footer>
 
+<script>
+const search=document.getElementById('archiveSearch');
+if(search){
+search.addEventListener('input',()=>{
+const query=search.value.trim().toLowerCase();
+document.querySelectorAll('.resident-entry').forEach(entry=>{
+const matches=entry.textContent.toLowerCase().includes(query);
+entry.style.display=matches?'':'none';
+if(query&&matches)entry.open=true;
+});
+});
+}
+</script>
 </body>
 </html>
